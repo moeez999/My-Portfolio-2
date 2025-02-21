@@ -652,6 +652,15 @@ const portfolioItems = [
     link: "https://trendybymoeez.netlify.app//",
   },
   {
+    id: 10,
+    category: "filter-wordpress",
+    title: "Frame Up",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/frameup.png",
+    previewImg: "assets/img/portfolio/frameup.png",
+    link: "https://frameup.hannahscatahoulasofsc.com/",
+  },
+  {
     id: 6,
     category: "filter-htmlcssjs",
     title: "SMMPANEL Marketing",
