@@ -613,6 +613,15 @@ const portfolioItems = [
     link: "https://nectos-iota.vercel.app/",
   },
   {
+    id: 11,
+    category: "filter-Next",
+    title: "Nectos Dashboard",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/nectosdash.png",
+    previewImg: "assets/img/portfolio/nectosdash.png",
+    link: "https://nectos-iota.vercel.app/dashboard",
+  },
+  {
     id: 3,
     category: "filter-react",
     title: "Product 1",
