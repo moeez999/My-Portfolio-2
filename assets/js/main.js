@@ -680,7 +680,7 @@ const portfolioItems = [
   },
   {
     id: 7,
-    category: "filter-React",
+    category: "filter-react",
     title: "Flash Cube IT",
     description: "Lorem ipsum, dolor sit amet consectetur",
     imgSrc: "assets/img/portfolio/flashcubeit.png",
