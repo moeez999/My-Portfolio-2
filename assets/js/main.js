@@ -624,7 +624,7 @@ const portfolioItems = [
   {
     id: 3,
     category: "filter-react",
-    title: "Product 1",
+    title: "Repack Marketing",
     description: "Lorem ipsum, dolor sit amet consectetur",
     imgSrc: "assets/img/portfolio/Repack.png",
     previewImg: "assets/img/portfolio/Repack.png",
@@ -690,22 +690,22 @@ const portfolioItems = [
   {
     id: 8,
     category: "filter-htmlcssjs",
-    title: "Product 1",
+    title: "Zamy Massage",
     description: "Lorem ipsum, dolor sit amet consectetur",
     imgSrc: "assets/img/portfolio/zamy.gif",
     previewImg: "assets/img/portfolio/zamy.gif",
     link: "https://zamymassageandwax.co.uk/",
   },
 
-  {
-    id: 100,
-    category: "filter-Next",
-    title: "Branding 1",
-    description: "Lorem ipsum, dolor sit amet consectetur",
-    imgSrc: "assets/img/portfolio/football.gif",
-    previewImg: "assets/img/portfolio/branding-1.jpg",
-    link: "portfolio-details.html",
-  },
+  // {
+  //   id: 100,
+  //   category: "filter-Next",
+  //   title: "Branding 1",
+  //   description: "Lorem ipsum, dolor sit amet consectetur",
+  //   imgSrc: "assets/img/portfolio/football.gif",
+  //   previewImg: "assets/img/portfolio/branding-1.jpg",
+  //   link: "portfolio-details.html",
+  // },
 
   // Add more items here as needed
 ];
