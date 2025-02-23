@@ -689,6 +689,15 @@ const portfolioItems = [
     link: "https://coinbymoeez.netlify.app/",
   },
   {
+    id: 17,
+    category: "filter-htmlcssjs",
+    title: "Adam and Annalisa",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/adam.png",
+    previewImg: "assets/img/portfolio/adam.png",
+    link: "https://guileless-llama-9eb7d9.netlify.app/",
+  },
+  {
     id: 12,
     category: "filter-htmlcssjs",
     title: "SMMPANEL Marketing",
