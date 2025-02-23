@@ -698,6 +698,15 @@ const portfolioItems = [
     link: "https://guileless-llama-9eb7d9.netlify.app/",
   },
   {
+    id: 18,
+    category: "filter-Nuxt",
+    title: "Thortok",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/thortok.png",
+    previewImg: "assets/img/portfolio/thortok.png",
+    link: "https://thortok-delta.vercel.app/",
+  },
+  {
     id: 12,
     category: "filter-htmlcssjs",
     title: "SMMPANEL Marketing",
