@@ -613,7 +613,7 @@ const portfolioItems = [
     link: "https://nectos-iota.vercel.app/",
   },
   {
-    id: 11,
+    id: 15,
     category: "filter-Next",
     title: "Nectos Dashboard",
     description: "Lorem ipsum, dolor sit amet consectetur",
@@ -621,6 +621,7 @@ const portfolioItems = [
     previewImg: "assets/img/portfolio/nectosdash.png",
     link: "https://nectos-iota.vercel.app/dashboard",
   },
+
   {
     id: 3,
     category: "filter-react",
@@ -661,7 +662,7 @@ const portfolioItems = [
     link: "https://trendybymoeez.netlify.app//",
   },
   {
-    id: 10,
+    id: 11,
     category: "filter-wordpress",
     title: "Frame Up",
     description: "Lorem ipsum, dolor sit amet consectetur",
@@ -679,7 +680,16 @@ const portfolioItems = [
     link: "https://silver-panda-8af4a8.netlify.app/",
   },
   {
-    id: 6,
+    id: 16,
+    category: "filter-react",
+    title: "Coin Network",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/coinnetwork.png",
+    previewImg: "assets/img/portfolio/coinnetwork.png",
+    link: "https://coinbymoeez.netlify.app/",
+  },
+  {
+    id: 12,
     category: "filter-htmlcssjs",
     title: "SMMPANEL Marketing",
     description: "Lorem ipsum, dolor sit amet consectetur",
@@ -688,7 +698,7 @@ const portfolioItems = [
     link: "https://smmpanelproduction.netlify.app/",
   },
   {
-    id: 6,
+    id: 13,
     category: "filter-htmlcssjs",
     title: "Online Communities",
     description: "Lorem ipsum, dolor sit amet consectetur",
@@ -697,7 +707,7 @@ const portfolioItems = [
     link: "https://onlinecommunities.netlify.app/",
   },
   {
-    id: 6,
+    id: 14,
     category: "filter-htmlcssjs",
     title: "PSD TO HTML",
     description: "Lorem ipsum, dolor sit amet consectetur",
@@ -705,6 +715,7 @@ const portfolioItems = [
     previewImg: "assets/img/portfolio/psdtohtml.png",
     link: "https://tangerine-palmier-bd4f28.netlify.app/",
   },
+
   {
     id: 7,
     category: "filter-react",
