@@ -653,7 +653,7 @@ const portfolioItems = [
 
   {
     id: 9,
-    category: "filter-Next",
+    category: "filter-react",
     title: "Trendy",
     description: "Lorem ipsum, dolor sit amet consectetur",
     imgSrc: "assets/img/portfolio/7.gif",
