@@ -706,6 +706,7 @@ const portfolioItems = [
     previewImg: "assets/img/portfolio/thortok.png",
     link: "https://thortok-delta.vercel.app/",
   },
+
   {
     id: 12,
     category: "filter-htmlcssjs",
@@ -733,7 +734,15 @@ const portfolioItems = [
     previewImg: "assets/img/portfolio/psdtohtml.png",
     link: "https://tangerine-palmier-bd4f28.netlify.app/",
   },
-
+  {
+    id: 19,
+    category: "filter-htmlcssjs",
+    title: "Porfolio",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/portfolio.png",
+    previewImg: "assets/img/portfolio/portfolio.png",
+    link: "https://prismatic-entremet-29da0e.netlify.app/",
+  },
   {
     id: 7,
     category: "filter-react",
