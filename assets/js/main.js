@@ -621,6 +621,15 @@ const portfolioItems = [
     previewImg: "assets/img/portfolio/nectosdash.png",
     link: "https://nectos-iota.vercel.app/dashboard",
   },
+  {
+    id: 16,
+    category: "filter-Next",
+    title: "TechXen Technology IT Solution",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/tech.png",
+    previewImg: "assets/img/portfolio/tech.png",
+    link: "https://techxen-technology-it-solution.netlify.app/,
+  },
 
   {
     id: 3,
