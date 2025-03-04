@@ -638,7 +638,7 @@ const portfolioItems = [
     description: "Lorem ipsum, dolor sit amet consectetur",
     imgSrc: "assets/img/portfolio/Repack.png",
     previewImg: "assets/img/portfolio/Repack.png",
-    link: "https://repackmarketing.vercel.app/",
+    link: "https://www.repack-marketing.com/",
   },
 
   {
