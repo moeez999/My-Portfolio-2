@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Moeez Freelancer</title>
+    <title>Moeez Web Developer</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -80,11 +80,11 @@
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2>I am Moeez</h2>
+          <h2>IHello Moeez Here</h2>
           <p>
             <span
               class="typed"
-              data-typed-items="Designer, Developer, Freelancer"
+              data-typed-items="Web Designer, Web Developer"
             ></span>
           </p>
         </div>
@@ -705,8 +705,7 @@
           </div>
 
           <form
-            action="forms/contact.php"
-            method="post"
+            id="contactForm"
             class="php-email-form"
             data-aos="fade-up"
             data-aos-delay="300"
@@ -715,47 +714,50 @@
               <div class="col-md-6">
                 <input
                   type="text"
-                  name="name"
+                  id="name"
                   class="form-control"
                   placeholder="Your Name"
-                  required=""
+                  required
                 />
               </div>
 
               <div class="col-md-6">
                 <input
                   type="email"
+                  id="email"
                   class="form-control"
-                  name="email"
                   placeholder="Your Email"
-                  required=""
+                  required
                 />
               </div>
 
               <div class="col-md-12">
                 <input
                   type="text"
+                  id="subject"
                   class="form-control"
-                  name="subject"
                   placeholder="Subject"
-                  required=""
+                  required
                 />
               </div>
 
               <div class="col-md-12">
                 <textarea
+                  id="message"
                   class="form-control"
-                  name="message"
                   rows="6"
                   placeholder="Message"
-                  required=""
+                  required
                 ></textarea>
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
+                <div class="loading" style="display: none">Loading...</div>
+                <div
+                  class="error-message"
+                  style="display: none; color: red"
+                ></div>
+                <div class="sent-message" style="display: none; color: green">
                   Your message has been sent. Thank you!
                 </div>
 
@@ -763,6 +765,7 @@
               </div>
             </div>
           </form>
+
           <!-- End Contact Form -->
         </div>
       </section>
@@ -918,6 +921,40 @@
         },
         retina_detect: true,
       });
+    </script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          // Show loading message
+          document.querySelector(".loading").style.display = "block";
+          document.querySelector(".error-message").style.display = "none";
+          document.querySelector(".sent-message").style.display = "none";
+
+          const response = await fetch("http://localhost:5000/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              subject: document.getElementById("subject").value,
+              message: document.getElementById("message").value,
+            }),
+          });
+
+          const result = await response.json();
+          document.querySelector(".loading").style.display = "none";
+
+          if (result.success) {
+            document.querySelector(".sent-message").style.display = "block";
+            document.getElementById("contactForm").reset();
+          } else {
+            document.querySelector(".error-message").innerText = result.error;
+            document.querySelector(".error-message").style.display = "block";
+          }
+        });
     </script>
 
     <!-- Main JS File -->
