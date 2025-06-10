@@ -613,6 +613,15 @@ const portfolioItems = [
     link: "https://nectos-iota.vercel.app/",
   },
   {
+    id: 20,
+    category: "filter-react",
+    title: "Xdagreef Pool",
+    description: "Lorem ipsum, dolor sit amet consectetur",
+    imgSrc: "assets/img/portfolio/xdag.gif",
+    previewImg: "assets/img/portfolio/xdag.gif",
+    link: "https://www.xdagreef.org/",
+  },
+  {
     id: 15,
     category: "filter-Next",
     title: "Nectos Dashboard",
