@@ -856,7 +856,20 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X84QRW5P40"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-X84QRW5P40");
+    </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -870,6 +883,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <script>
       particlesJS("particles-js", {
         particles: {
