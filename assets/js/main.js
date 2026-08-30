@@ -65,16 +65,6 @@
   });
 
   /**
-   * Preloader
-   */
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
-
-  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector(".scroll-top");
@@ -142,9 +132,10 @@
     let sort = isotopeItem.getAttribute("data-sort") ?? "original-order";
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector(".isotope-container"), function () {
+    window.addEventListener("load", () => {
+      const isotopeContainer = isotopeItem.querySelector(".isotope-container");
       initIsotope = new Isotope(
-        isotopeItem.querySelector(".isotope-container"),
+        isotopeContainer,
         {
           itemSelector: ".isotope-item",
           layoutMode: layout,
@@ -152,6 +143,14 @@
           sortBy: sort,
         }
       );
+
+      isotopeContainer.querySelectorAll("img").forEach((image) => {
+        if (!image.complete) {
+          image.addEventListener("load", () => initIsotope.layout(), {
+            once: true,
+          });
+        }
+      });
     });
 
     isotopeItem
@@ -551,7 +550,7 @@ function renderTestimonials() {
     testimonialItem.classList.add("swiper-slide");
     testimonialItem.innerHTML = `
       <div class="testimonial-item">
-        <img src="${testimonial.image}" class="testimonial-img" alt="" />
+        <img src="${testimonial.image}" class="testimonial-img" alt="" loading="lazy" decoding="async" />
         <h3>${testimonial.name}</h3>
         <h4>${testimonial.country}</h4>
         <div class="stars">${'<i class="bi bi-star-fill"></i>'.repeat(
@@ -766,7 +765,7 @@ portfolioItems.forEach((item) => {
   const portfolioItem = document.createElement("div");
   portfolioItem.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}`;
   portfolioItem.innerHTML = `
-    <img src="${item.imgSrc}" class="img-fluid" alt="${item.title}" />
+    <img src="${item.imgSrc}" class="img-fluid" alt="${item.title}" loading="lazy" decoding="async" />
     <div class="portfolio-info">
       <h4>${item.title}</h4>
       <p>${item.description}</p>
