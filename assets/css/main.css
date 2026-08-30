@@ -704,6 +704,21 @@ section,
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+.additional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.additional-skills span {
+  padding: 7px 12px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  font-size: 14px;
+  font-weight: 600;
+}
 .rounded-3 {
   border-radius: 5px;
 }
