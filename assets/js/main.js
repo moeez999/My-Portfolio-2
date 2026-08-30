@@ -127,28 +127,6 @@
   }
 
   /**
-   * Animate the skills items on reveal
-   */
-  let skillsAnimation = document.querySelectorAll(".skills-animation");
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = item.querySelectorAll(".progress .progress-bar");
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
-    });
-  });
-
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
@@ -780,17 +758,6 @@ const portfolioItems = [
     link: "https://zamymassageandwax.co.uk/",
   },
 
-  // {
-  //   id: 100,
-  //   category: "filter-Next",
-  //   title: "Branding 1",
-  //   description: "Lorem ipsum, dolor sit amet consectetur",
-  //   imgSrc: "assets/img/portfolio/football.gif",
-  //   previewImg: "assets/img/portfolio/branding-1.jpg",
-  //   link: "portfolio-details.html",
-  // },
-
-  // Add more items here as needed
 ];
 
 const portfolioContainer = document.querySelector(".isotope-container");
