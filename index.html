@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moeez Raza | Full Stack Web Developer & Designer Portfolio</title>
+    <title>Muhammad Moeez Raza | Senior Full Stack Developer</title>
     <meta
       name="description"
-      content="Professional portfolio of Moeez Raza, a Full Stack Web Developer specializing in React, Next.js, Node.js, and responsive web design. Offering custom web development services and Figma to code conversions."
+      content="Senior Full Stack Developer specializing in React, Next.js, Node.js, APIs, databases, workflow automation, and scalable business systems."
     />
+    <meta name="theme-color" content="#0b1120" />
     <meta
       name="keywords"
       content="web developer, full stack developer, React developer, Next.js developer, Node.js developer, Figma to code, web design, portfolio"
@@ -88,7 +89,7 @@
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
+          <ul id="navmenu-list">
             <li>
               <a href="#hero" class="active">Home<br /></a>
             </li>
@@ -100,7 +101,15 @@
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <button
+            type="button"
+            class="mobile-nav-toggle d-xl-none"
+            aria-controls="navmenu-list"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
         </nav>
       </div>
     </header>
@@ -114,16 +123,28 @@
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2>Muhammad Moeez Raza</h2>
-          <p>
+          <span class="hero-kicker">Muhammad Moeez Raza</span>
+          <h2>I build scalable web applications and automated business systems.</h2>
+          <p class="hero-roles">
             <span
               class="typed"
               data-typed-items="Senior Software Engineer, Full Stack Developer, Automation Specialist"
             ></span>
           </p>
+          <p class="hero-summary">
+            End-to-end development, API integrations, and workflow automation
+            for startups, agencies, and growing businesses.
+          </p>
           <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-            <a class="btn btn-light" href="#portfolio">View Projects</a>
-            <a class="btn btn-outline-light" href="assets/docs/Muhammad-Moeez-Raza-CV.pdf" download>Download CV</a>
+            <a class="btn hero-btn-primary" href="#contact">Hire Me</a>
+            <a class="btn hero-btn-secondary" href="#portfolio">View Projects</a>
+            <a class="btn hero-btn-secondary" href="assets/docs/Muhammad-Moeez-Raza-CV.pdf" download>Download CV</a>
+          </div>
+          <div class="hero-trust" aria-label="Professional highlights">
+            <div><strong>4+</strong><span>Years’ Experience</span></div>
+            <div><strong>Full Stack</strong><span>Frontend to Backend</span></div>
+            <div><strong>APIs</strong><span>Integrations &amp; Automation</span></div>
+            <div><strong>Remote</strong><span>Worldwide Collaboration</span></div>
           </div>
         </div>
       </section>
@@ -133,162 +154,142 @@
       <!-- About Section -->
       <section id="about" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="row justify-content-between gy-4">
-                <div class="col-lg-5">
-                  <img
-                    src="assets/img/profile-img.jpg"
-                    class="img-fluid rounded-3"
-                    alt="Moeez Raza"
-                    decoding="async"
-                  />
-                </div>
-                <div class="col-lg-7 about-info">
-                  <p><strong>Name: </strong> <span>Muhammad Moeez Raza</span></p>
-                  <p>
-                    <strong>Profile: </strong>
-                    <span>Senior Software Engineer / Full Stack Developer</span>
-                  </p>
-                  <p>
-                    <strong>Email: </strong> <span>moeezraza69@gmail.com</span>
-                  </p>
-                  <p><strong>Phone: </strong> <span>0309-5099536</span></p>
-                </div>
-                <div class="additional-skills mt-4" aria-label="Additional skills">
-                  <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span>
-                  <span>SQL</span><span>PHP</span><span>WordPress</span>
-                  <span>REST APIs</span><span>Webhooks</span><span>Knack</span>
-                  <span>Make.com</span><span>Thinkific</span><span>Moodle</span>
+          <div class="section-title">
+            <h2>About Me</h2>
+            <p>Full-stack engineering, integrations, and automation focused on practical business outcomes.</p>
+          </div>
+
+          <div class="about-layout">
+            <aside class="profile-card">
+              <div class="profile-card-header">
+                <img
+                  src="assets/img/profile-img.jpg"
+                  alt="Muhammad Moeez Raza"
+                  decoding="async"
+                />
+                <div>
+                  <h3>Muhammad Moeez Raza</h3>
+                  <p>Senior Software Engineer</p>
+                  <span><i class="bi bi-geo-alt"></i> Rawalpindi, Pakistan</span>
                 </div>
               </div>
 
-              <div class="skills-content skills-animation">
-                <h5>Skills</h5>
+              <div class="profile-contact">
+                <a href="mailto:moeezraza69@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                  <span><small>Email</small>moeezraza69@gmail.com</span>
+                </a>
+                <a href="tel:+923095099536">
+                  <i class="bi bi-telephone"></i>
+                  <span><small>Phone</small>+92 309 5099536</span>
+                </a>
+              </div>
 
-                <div class="skills-section">
-                  <!-- HTML -->
-                  <div class="progress">
-                    <span class="skill" data-progress="90">
-                      <img
-                        src="assets/img/skills/html.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>HTML</span>
-                    </span>
-                  </div>
+              <div class="profile-actions">
+                <a href="#contact" class="btn btn-primary">Let’s Work Together</a>
+                <a href="assets/docs/Muhammad-Moeez-Raza-CV.pdf" class="btn btn-outline-primary" download>Download CV</a>
+              </div>
 
-                  <!-- CSS -->
-                  <div class="progress">
-                    <span class="skill" data-progress="85">
-                      <img
-                        src="assets/img/skills/css.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>CSS</span>
-                    </span>
-                  </div>
+              <div class="profile-highlights">
+                <div><strong>4+</strong><span>Years Experience</span></div>
+                <div><strong>Full Stack</strong><span>Frontend &amp; Backend</span></div>
+                <div><strong>APIs</strong><span>Systems Integration</span></div>
+                <div><strong>Remote</strong><span>Available Worldwide</span></div>
+              </div>
+            </aside>
 
-                  <!-- JavaScript -->
-                  <div class="progress">
-                    <span class="skill" data-progress="75">
-                      <img
-                        src="assets/img/skills/javascript.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>JavaScript</span>
-                    </span>
-                  </div>
+            <article class="about-me">
+              <span class="about-kicker">What I Do</span>
+              <h4>Engineering solutions that move businesses forward.</h4>
+              <p>
+                I am a results-driven Full Stack Developer and Software Engineer
+                with 4+ years of experience building scalable, high-performance,
+                and user-friendly web applications.
+              </p>
+              <p>
+                I deliver end-to-end products with React, Next.js, Node.js,
+                MongoDB, PostgreSQL, and SQL—from responsive interfaces to APIs,
+                databases, real-time features, and deployment.
+              </p>
+              <p>
+                I also create workflow automations and integrations that reduce
+                manual work and turn complex operational requirements into
+                dependable systems.
+              </p>
+              <div class="focus-list">
+                <span><i class="bi bi-check2-circle"></i> Scalable web applications</span>
+                <span><i class="bi bi-check2-circle"></i> APIs and integrations</span>
+                <span><i class="bi bi-check2-circle"></i> Business automation</span>
+                <span><i class="bi bi-check2-circle"></i> Performance optimization</span>
+              </div>
+            </article>
+          </div>
 
-                  <!-- React JS -->
-                  <div class="progress">
-                    <span class="skill" data-progress="80">
-                      <img
-                        src="assets/img/skills/react.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>React JS</span>
-                    </span>
-                  </div>
+          <div class="skills-content">
+            <div class="skills-heading">
+              <div>
+                <span>Technology Stack</span>
+                <h5>Tools I work with</h5>
+              </div>
+              <p>Modern technologies for dependable frontend, backend, data, and automation solutions.</p>
+            </div>
 
-                  <!-- Next JS -->
-                  <div class="progress">
-                    <span class="skill" data-progress="70">
-                      <img
-                        src="assets/img/skills/nextjs.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>Next JS</span>
-                    </span>
-                  </div>
-
-                  <!-- Node JS -->
-                  <div class="progress">
-                    <span class="skill" data-progress="65">
-                      <img
-                        src="assets/img/skills/nodejs.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>Node JS</span>
-                    </span>
-                  </div>
-
-                  <!-- Figma Conversions -->
-                  <div class="progress">
-                    <span class="skill" data-progress="90">
-                      <img
-                        src="assets/img/skills/figma.svg"
-                        width="50"
-                        height="50"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span>Figma Conversions</span>
-                    </span>
-                  </div>
+            <div class="tech-marquee" aria-label="Technology stack">
+              <div class="tech-track">
+                <div class="tech-group">
+                  <span class="tech-pill"><img src="assets/img/skills/html.svg" alt="" />HTML</span>
+                  <span class="tech-pill"><img src="assets/img/skills/css.svg" alt="" />CSS</span>
+                  <span class="tech-pill"><img src="assets/img/skills/javascript.svg" alt="" />JavaScript</span>
+                  <span class="tech-pill"><img src="assets/img/skills/react.svg" alt="" />React</span>
+                  <span class="tech-pill"><img src="assets/img/skills/nextjs.svg" alt="" />Next.js</span>
+                  <span class="tech-pill"><img src="assets/img/skills/nodejs.svg" alt="" />Node.js</span>
+                  <span class="tech-pill"><img src="assets/img/skills/figma.svg" alt="" />Figma</span>
+                  <span class="tech-pill"><i class="bi bi-database"></i>MongoDB</span>
+                  <span class="tech-pill"><i class="bi bi-database-check"></i>PostgreSQL</span>
+                  <span class="tech-pill"><i class="bi bi-database-gear"></i>MySQL</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-php"></i>PHP</span>
+                  <span class="tech-pill"><i class="bi bi-wordpress"></i>WordPress</span>
+                  <span class="tech-pill"><i class="bi bi-braces"></i>REST APIs</span>
+                  <span class="tech-pill"><i class="bi bi-diagram-3"></i>Webhooks</span>
+                  <span class="tech-pill"><i class="bi bi-lightning-charge"></i>Make.com</span>
+                  <span class="tech-pill"><i class="bi bi-grid"></i>Knack</span>
+                  <span class="tech-pill"><i class="bi bi-mortarboard"></i>Thinkific</span>
+                  <span class="tech-pill"><i class="bi bi-book"></i>Moodle</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-js"></i>jQuery</span>
+                  <span class="tech-pill"><i class="bi bi-camera-video"></i>Zoom</span>
+                  <span class="tech-pill"><i class="bi bi-robot"></i>AI Integrations</span>
+                </div>
+                <div class="tech-group" aria-hidden="true">
+                  <span class="tech-pill"><img src="assets/img/skills/html.svg" alt="" />HTML</span>
+                  <span class="tech-pill"><img src="assets/img/skills/css.svg" alt="" />CSS</span>
+                  <span class="tech-pill"><img src="assets/img/skills/javascript.svg" alt="" />JavaScript</span>
+                  <span class="tech-pill"><img src="assets/img/skills/react.svg" alt="" />React</span>
+                  <span class="tech-pill"><img src="assets/img/skills/nextjs.svg" alt="" />Next.js</span>
+                  <span class="tech-pill"><img src="assets/img/skills/nodejs.svg" alt="" />Node.js</span>
+                  <span class="tech-pill"><img src="assets/img/skills/figma.svg" alt="" />Figma</span>
+                  <span class="tech-pill"><i class="bi bi-database"></i>MongoDB</span>
+                  <span class="tech-pill"><i class="bi bi-database-check"></i>PostgreSQL</span>
+                  <span class="tech-pill"><i class="bi bi-database-gear"></i>MySQL</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-php"></i>PHP</span>
+                  <span class="tech-pill"><i class="bi bi-wordpress"></i>WordPress</span>
+                  <span class="tech-pill"><i class="bi bi-braces"></i>REST APIs</span>
+                  <span class="tech-pill"><i class="bi bi-diagram-3"></i>Webhooks</span>
+                  <span class="tech-pill"><i class="bi bi-lightning-charge"></i>Make.com</span>
+                  <span class="tech-pill"><i class="bi bi-grid"></i>Knack</span>
+                  <span class="tech-pill"><i class="bi bi-mortarboard"></i>Thinkific</span>
+                  <span class="tech-pill"><i class="bi bi-book"></i>Moodle</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-js"></i>jQuery</span>
+                  <span class="tech-pill"><i class="bi bi-camera-video"></i>Zoom</span>
+                  <span class="tech-pill"><i class="bi bi-robot"></i>AI Integrations</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="about-me">
-                <h4>About me</h4>
-                <p>
-                  I am a results-driven Full Stack Developer and Software
-                  Engineer with 4+ years of experience creating scalable,
-                  high-performance, and user-friendly web applications.
-                </p>
-                <p>
-                  I build end-to-end solutions with React, Next.js, Node.js,
-                  MongoDB, PostgreSQL, and SQL. My work includes real-time
-                  systems, API integrations, workflow automation, and
-                  pixel-accurate Figma conversions.
-                </p>
-                <p>
-                  I focus on performance, responsive design, maintainable code,
-                  and practical systems that reduce manual work. I enjoy leading
-                  teams, solving complex problems, and turning business
-                  requirements into reliable digital products.
-                </p>
-              </div>
+            <div class="skill-tags" aria-label="Engineering capabilities">
+              <span>Real-time Systems</span><span>API Integrations</span>
+              <span>Workflow Automation</span><span>AI Integrations</span>
+              <span>Data Validation</span><span>Responsive Design</span>
+              <span>Performance Optimization</span><span>Deployment</span>
             </div>
           </div>
         </div>
@@ -366,8 +367,8 @@
               </div>
               <div class="d-flex flex-wrap gap-2 mt-4">
                 <a class="btn btn-dark" href="assets/docs/Muhammad-Moeez-Raza-CV.pdf" download>Download CV</a>
-                <a class="btn btn-outline-dark" href="https://www.fiverr.com/moeez3" target="_blank" rel="noopener noreferrer">Fiverr Profile</a>
-                <a class="btn btn-outline-dark" href="https://www.upwork.com/freelancers/~017c118ceabb2941e5?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork Profile</a>
+                <a class="btn btn-outline-dark brand-button" href="https://www.fiverr.com/moeez3" target="_blank" rel="noopener noreferrer"><img src="assets/img/social/fiverr.svg" alt="" />Fiverr Profile</a>
+                <a class="btn btn-outline-dark brand-button" href="https://www.upwork.com/freelancers/~017c118ceabb2941e5?mp_source=share" target="_blank" rel="noopener noreferrer"><img src="assets/img/social/upwork.svg" alt="" />Upwork Profile</a>
               </div>
             </div>
           </div>
@@ -584,6 +585,11 @@
         />
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-heading text-center">
+            <span>Client Feedback</span>
+            <h2>Trusted by clients worldwide</h2>
+            <p>Feedback from completed freelance and development projects.</p>
+          </div>
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
               {
@@ -746,11 +752,23 @@
           <a href="https://www.linkedin.com/in/muhammad-moeez-raza-621a4b21b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
             ><i class="bi bi-linkedin"></i
           ></a>
-          <a href="https://www.fiverr.com/moeez3" target="_blank" rel="noopener noreferrer" aria-label="Fiverr"><i class="bi bi-briefcase"></i></a>
-          <a href="https://www.upwork.com/freelancers/~017c118ceabb2941e5?mp_source=share" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="bi bi-person-workspace"></i></a>
+          <a href="https://www.fiverr.com/moeez3" target="_blank" rel="noopener noreferrer" aria-label="Fiverr"><img src="assets/img/social/fiverr.svg" alt="" /></a>
+          <a href="https://www.upwork.com/freelancers/~017c118ceabb2941e5?mp_source=share" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><img src="assets/img/social/upwork.svg" alt="" /></a>
+          <a href="https://wa.me/923095099536" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/923095099536?text=Hello%20Moeez%2C%20I%20would%20like%20to%20discuss%20a%20project."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Discuss a project with Moeez on WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+      <span>Let’s talk</span>
+    </a>
 
     <!-- Scroll Top -->
     <a
@@ -775,6 +793,7 @@
       gtag("config", "G-X84QRW5P40");
     </script>
     <!-- Vendor JS Files -->
+    <script src="assets/js/navigation.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>

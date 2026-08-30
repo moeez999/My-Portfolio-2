@@ -30,29 +30,6 @@
   window.addEventListener("load", toggleScrolled);
 
   /**
-   * Mobile nav toggle
-   */
-  const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
-
-  function mobileNavToogle() {
-    document.querySelector("body").classList.toggle("mobile-nav-active");
-    mobileNavToggleBtn.classList.toggle("bi-list");
-    mobileNavToggleBtn.classList.toggle("bi-x");
-  }
-  mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
-
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll("#navmenu a").forEach((navmenu) => {
-    navmenu.addEventListener("click", () => {
-      if (document.querySelector(".mobile-nav-active")) {
-        mobileNavToogle();
-      }
-    });
-  });
-
-  /**
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
@@ -316,6 +293,7 @@ services.forEach((service, index) => {
         </div>
         <a href="#contact" class="stretched-link">
           <h3>${service.title}</h3>
+          <span class="service-link">Discuss your project <i class="bi bi-arrow-right"></i></span>
         </a>
         <p>${service.description}</p>
       </div>
@@ -326,38 +304,26 @@ services.forEach((service, index) => {
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  spaceBetween: 40,
+  spaceBetween: 24,
   loop: true,
   navigation: false,
-  autoplay: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    1024: {
+    640: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1200: {
+    992: {
       slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1400: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1600: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-    1800: {
-      slidesPerView: 6,
-      spaceBetween: 30,
+      spaceBetween: 24,
     },
   },
 });
