@@ -230,55 +230,40 @@
 
 const services = [
   {
-    title: "Custom Websites",
+    title: "Full-Stack Web Applications",
     description:
-      "Tailored web solutions with modern approach and technologies.",
+      "Scalable frontend and backend applications built around your users and business goals.",
     icon: "bi bi-code-slash",
   },
   {
-    title: "WordPress Websites",
-    description: "Professional WordPress sites with custom themes and plugins.",
-    icon: "bi bi-wordpress",
-  },
-  {
-    title: "Figma Conversions",
-    description: "Convert your Figma designs to pixel-perfect web interfaces.",
-    icon: "bi bi-ui-radios-grid",
-  },
-  {
-    title: "Figma to HTML/CSS/JS",
+    title: "API & System Integrations",
     description:
-      "Convert Figma designs into responsive HTML, CSS, and JavaScript.",
-    icon: "bi bi-filetype-html",
+      "Reliable connections between your website, databases, platforms, and third-party services.",
+    icon: "bi bi-diagram-3",
   },
   {
-    title: "Figma to React/Next.js",
+    title: "Workflow Automation",
     description:
-      "Tailwind, Bootstrap, Material UI, Chakra UI support for Figma to React.",
-    icon: "bi bi-filetype-jsx",
+      "Automated operational workflows using APIs, webhooks, Knack, Make.com, and connected tools.",
+    icon: "bi bi-lightning-charge",
   },
   {
-    title: "Figma to WordPress",
-    description: "Get your Figma design seamlessly integrated into WordPress.",
-    icon: "bi bi-wordpress",
-  },
-
-  {
-    title: "Custom Scripts",
+    title: "Frontend Development",
     description:
-      "Custom JavaScript and jQuery scripts for enhanced web interactivity.",
-    icon: "bi bi-terminal",
+      "Responsive, accessible interfaces from Figma using React, Next.js, HTML, CSS, or JavaScript.",
+    icon: "bi bi-window",
   },
   {
-    title: "Chrome Extensions",
-    description: "We build powerful Chrome extensions to suit your needs.",
-    icon: "bi bi-browser-chrome",
-  },
-  {
-    title: "E-Learning Platform",
+    title: "WordPress & E-Learning",
     description:
-      "Design and develop e-learning platforms tailored to your requirements.",
+      "Custom WordPress, Moodle, and Thinkific solutions with enrolment and platform integrations.",
     icon: "bi bi-mortarboard",
+  },
+  {
+    title: "Performance & Maintenance",
+    description:
+      "Bug fixes, load-time improvements, responsive repairs, and ongoing technical support.",
+    icon: "bi bi-speedometer2",
   },
 ];
 
@@ -510,13 +495,16 @@ const testimonials = [
 // Function to render testimonials
 function renderTestimonials() {
   const swiperWrapper = document.getElementById("testimonial-swiper-wrapper");
+  const featuredTestimonials = [0, 1, 3, 9, 12, 16, 17, 19].map(
+    (index) => testimonials[index]
+  );
 
-  testimonials.forEach((testimonial) => {
+  featuredTestimonials.forEach((testimonial) => {
     const testimonialItem = document.createElement("div");
     testimonialItem.classList.add("swiper-slide");
     testimonialItem.innerHTML = `
       <div class="testimonial-item">
-        <img src="${testimonial.image}" class="testimonial-img" alt="" loading="lazy" decoding="async" />
+        <span class="verified-review"><i class="bi bi-patch-check-fill"></i> Client review</span>
         <h3>${testimonial.name}</h3>
         <h4>${testimonial.country}</h4>
         <div class="stars">${'<i class="bi bi-star-fill"></i>'.repeat(
@@ -620,7 +608,7 @@ const portfolioItems = [
     description: "A responsive React storefront concept with product-focused presentation and interactions.",
     imgSrc: "assets/img/portfolio/7.gif",
     previewImg: "assets/img/portfolio/7.gif",
-    link: "https://trendybymoeez.netlify.app//",
+    link: "https://trendybymoeez.netlify.app/",
   },
   {
     id: 11,
@@ -698,7 +686,7 @@ const portfolioItems = [
   {
     id: 19,
     category: "filter-htmlcssjs",
-    title: "Porfolio",
+    title: "Portfolio",
     description: "A responsive personal portfolio showcasing work, skills, and contact information.",
     imgSrc: "assets/img/portfolio/portfolio.png",
     previewImg: "assets/img/portfolio/portfolio.png",
